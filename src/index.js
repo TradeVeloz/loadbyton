@@ -23,6 +23,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
+app.get('/health', (req, res) => res.json({ status: 'ok' }));
+
 app.use('/api/auth', authRouter);
 app.use('/api/requirements', requirementsRouter);
 app.use('/api/requirements/:id/bids', bidsRouter);

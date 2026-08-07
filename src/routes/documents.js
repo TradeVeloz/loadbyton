@@ -2,14 +2,14 @@ const express = require('express');
 const path = require('node:path');
 const fs = require('node:fs');
 const multer = require('multer');
-const { all, run } = require('../db');
+const { all, run, DATA_DIR } = require('../db');
 const { requireAuth } = require('../middleware/auth');
 const { loadAndAuthorize } = require('./requirements');
 
 const router = express.Router({ mergeParams: true });
 const uid = (p) => `${p}_${Math.random().toString(36).slice(2, 10)}`;
 
-const UPLOAD_DIR = path.join(__dirname, '..', '..', 'data', 'uploads');
+const UPLOAD_DIR = path.join(DATA_DIR, 'uploads');
 if (!fs.existsSync(UPLOAD_DIR)) fs.mkdirSync(UPLOAD_DIR, { recursive: true });
 
 const storage = multer.diskStorage({
