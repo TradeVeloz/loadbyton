@@ -1,0 +1,45 @@
+:root {
+  /* ---- Surfaces & ink ---- */
+  --ink: #0B0E14;
+  --ink-2: #2B2E36;
+  --paper: #FFFFFF;
+  --bg: #F5F5F7;
+  --line: #E9E9EC;
+  --line-2: #F0F0F2;
+  --muted: #74747C;
+  --muted-2: #9A9AA1;
+
+  /* ---- Brand ---- */
+  --accent: #E85D0C;
+  --accent-2: #C94A05;
+  --accent-soft: #FFF1E8;
+  --navy: #0B3B66;
+  --navy-soft: #E8F0F8;
+
+  /* ---- Semantic ---- */
+  --green: #067A46;
+  --green-soft: #E4F5EC;
+  --blue: #2E5FD9;
+  --blue-soft: #EAF0FF;
+  --yellow: #B8860B;
+  --yellow-soft: #FBF1DC;
+  --red: #C93A44;
+  --red-soft: #FBEBEC;
+
+  /* ---- Elevation ---- */
+  --sh-sm: 0 1px 2px rgba(11,14,20,.05), 0 1px 6px rgba(11,14,20,.04);
+  --sh: 0 2px 8px rgba(11,14,20,.05), 0 12px 32px rgba(11,14,20,.08);
+  --sh-lg: 0 24px 64px rgba(11,14,20,.24);
+
+  /* ---- Shape ---- */
+  --r-sm: 12px;
+  --r: 16px;
+  --r-lg: 22px;
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(.32,.72,0,1);
+  --ease-out: cubic-bezier(.16,1,.3,1);
+
+  /* ---- Type ---- */
+  --font: -apple-system, 'SF Pro Display', 'Segoe UI Variable', 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', Arial, sans-serif;
+}

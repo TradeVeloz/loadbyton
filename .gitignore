@@ -1,5 +1,9 @@
 .claude/settings.local.json
 
+# App
+node_modules/
+data/
+
 # Ruflo local secrets and runtime data
 .env
 .env.local
